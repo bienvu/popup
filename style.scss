@@ -152,7 +152,7 @@
       height: 126px;
       right: 0;
       content: '';
-      background-size: 70% auto;
+      background-size: 85% auto;
       opacity: .7;
 
       @media(max-width: 767px) {
@@ -316,7 +316,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     background: url('./images/footer-bg.png') no-repeat scroll right bottom #e66116;
-    padding: 15px 20px;
+    padding: 15px 32px;
     color: #fff;
     border-radius: 0 0 12px 12px;
 
