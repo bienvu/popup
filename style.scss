@@ -16,7 +16,7 @@
   // align-items: center;
   // overflow: hidden;
 
-  @media(max-width: 1024px) {
+  @media(max-width: 767px) {
     max-height: 95vh;
     overflow: scroll;
   }
@@ -58,7 +58,7 @@
   h2 {
     font-family: 'San Francisco Display';
     font-weight: bold;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 0.95;
     margin: 0 0 7px 0;
 
@@ -68,14 +68,14 @@
   }
 
   h3 {
-    font-size: 26.26px;
+    font-size: 22px;
     font-weight: 600;
     color: #e86517;
     margin: 0 0 11px 0;
   }
 
   h4 {
-    font-size: 22px;
+    font-size: 20px;
     color: #ffe524;;
     font-weight: 600;
     margin: 0 0 12px 0;
@@ -86,8 +86,8 @@
     margin: 0;
 
     li {
-      margin-bottom: 12px;
-      font-size: 14.26px;
+      margin-bottom: 8px;
+      font-size: 14px;
       line-height: 1.4;
 
       &:last-child {
@@ -135,7 +135,7 @@
     background: -moz-linear-gradient(top, #f3ca34 0%, #f2973e 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #f3ca34 0%,#f2973e 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #f3ca34 0%,#f2973e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    padding: 25px 32px;
+    padding: 15px 32px;
     color: #fff;
     position: relative;
     border-radius: 12px 12px 0 0;
@@ -164,13 +164,16 @@
         right: 0;
       }
     }
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
   &__middle {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
-    padding: 24px 35px;
+    padding: 15px 35px;
     background: #f0f4f6;
 
     @media(max-width: 550px) {
@@ -199,7 +202,7 @@
       overflow: hidden;
       right: -56px;
       position: relative;
-      margin-top: -77px;
+      margin-top: -44px;
 
       @media(max-width: 767px) {
         width: 100%;
@@ -208,7 +211,7 @@
       }
 
       @media(min-width: 768px) {
-        right: -24px;
+        right: -44px;
       }
     
       @media(min-width: 1025px) {
@@ -217,8 +220,8 @@
       
       .form-action {
         text-align: center;
-        margin-bottom: 32px;
-        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-top: 30px;
       }
 
       .note {
@@ -242,13 +245,13 @@
       }
 
       h2 {
-        font-size: 24px;
+        font-size: 22px;
         color: #ffb229;
         font-weight: 600;
         text-align: center;
         padding-bottom: 20px;
         position: relative;
-        margin-bottom: 48px;
+        margin-bottom: 40px;
         padding-top: 20px;
 
         span {
@@ -271,7 +274,7 @@
       }
 
       .form-item {
-        margin-bottom: 28px;
+        margin-bottom: 15px;
       }
 
       input[type="text"],
@@ -280,7 +283,7 @@
         border: 0;
         border-bottom: 1px solid #e3e9ed;
         width: 100%;
-        font-size: 14.26px;
+        font-size: 14px;
         color: #6e899f;
         padding: 0px 23px;
         box-sizing: border-box;
@@ -312,21 +315,26 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: #e66116;
-    padding: 9px 36px 20px;
+    background: url('../images/footer-bg.png') no-repeat scroll right bottom #e66116;
+    padding: 15px 20px;
     color: #fff;
     border-radius: 0 0 12px 12px;
 
-    @media(max-width: 550px) {
-      padding: 9px 20px 20px;
+    @media(min-width: 1900px) {
+      padding: 9px 36px 20px;
     }
 
     .item {
       width: calc((100% - 72px) / 2);
-      padding: 10px 0;
+      // padding: 10px 0;
 
       @media(max-width: 550px) {
         width: 100%;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
